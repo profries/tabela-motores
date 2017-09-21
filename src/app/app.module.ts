@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { TabelaMotoresComponent } from './tabela-motores/tabela-motores.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TabelaMotoresComponent
   ],
   imports: [
     BrowserModule

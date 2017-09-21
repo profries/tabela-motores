@@ -1,0 +1,18 @@
+<h3>
+  Tabela de Motores
+</h3>
+<table *ngIf='motores.length > 0'>
+  <tr>
+    <th>Nome</th>
+    <th>Descrição</th>
+    <th>Uso</th>
+  </tr>
+  <tr *ngFor='let motor of motores'>
+    <td>{{motor.nome}}</td>
+    <td>{{motor.descricao}}</td>
+    <td>{{motor.uso}}</td>
+  </tr>
+</table>
+<p *ngIf='motores.length == 0'>
+  Não há motores cadastrados
+</p>
